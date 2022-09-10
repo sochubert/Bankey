@@ -16,7 +16,7 @@ class MainViewController: UITabBarController {
     }
     
     private func setupViews() {
-        let summaryVC = AccountSummaryViewConroller()
+        let summaryVC = AccountSummaryViewController()
         let moneyVC = MoveMoneyViewController()
         let moreVC = MoreViewController()
         
@@ -47,12 +47,6 @@ class MainViewController: UITabBarController {
     private func setupTabBar() {
         tabBar.tintColor = appColor
         tabBar.isTranslucent = false
-    }
-}
-
-class AccountSummaryViewConroller: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .systemGreen
     }
 }
 
